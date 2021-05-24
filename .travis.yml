@@ -13,8 +13,6 @@ sudo: required
 cache:
   directories:
   - $HOME/.m2
-  - $HOME/pulsar-dep
-  - "$HOME/apache-maven-3.5.0"
 
 script:
     # run tests
