@@ -1,0 +1,21 @@
+
+dist: trusty 
+
+language: java cpp 
+
+compiler: gcc
+
+jdk:
+  - oraclejdk8
+
+sudo: required
+
+cache:
+  directories:
+  - $HOME/.m2
+  - $HOME/pulsar-dep
+  - "$HOME/apache-maven-3.5.0"
+
+script:
+    # run tests
+    - mvn clean test -fn -B
